@@ -1,0 +1,47 @@
+{
+    "@metadata": {
+        "authors": [
+            "Elias"
+        ],
+        "last-updated": "2016-04-02",
+        "locale": "en"
+    },
+    "menu_home":                "Home",
+    "menu_services":            "Services",
+    "menu_portfolio":           "Portfolio",
+    "menu_feedback":            "Feedback",
+    "menu_contact-us":          "Contact us",
+    "menu_language":            "Language",
+
+    "header_title":             "Accelerating <strong>society</strong> with <strong>technology</strong>",
+    "header_sub":               "Building <strong>society-oriented e-Services</strong>",
+
+    "services_title":           "Our services",
+    "services_sub":             "We believe our daily world should be smarter to save time, resources, and become more people friendly. With your cooperation, we solve social problems using modern technology and open new opportunities for your business.",
+
+    "services_engineering":     "e-Society Engineering",
+    "services_engineering_sub": "We design and implement society-oriented e-services that enhance interaction between citizens, government, public institutions and your business.",
+    "services_pro-bono":        "Pro Bono Development",
+    "services_pro-bono_sub":    "We stand ready to offer pro bono service to projects and initiatives in such spheres as e-government, education and public services.",
+    "services_integration":     "Integration",
+    "services_integration_sub": "With an idea of a global smart-society in mind, we make your services design to be easy to extend and integrate with another application and services.",
+    "service_researching":      "Researching",
+    "service_researching_sub":  "Social-oriented project requires special attention. During the project implementation, we analyze mechanisms of interaction between services and citizens, their expectations and demands.",
+
+    "portfolio_title":          "Our Projects",
+
+    "feedback_title":           "Feedback",
+
+    "contact-us_title":         "Contact us",
+    "contact-us_sub":           "Let's talk about <strong>your</strong> service <strong>e-Sociability</strong>",
+    "contact-us_name":          "Your Name",
+    "contact-us_mobile":        "Your Mobile",
+    "contact-us_email":         "Your Email",
+    "contact-us_question":      "Your question here",
+    "contact-us_submit":        "Send message",
+
+    "footer_address_title":     "Address",
+    "footer_address":           "4d Wawelska St. #6, 80-034 Gdańsk, Poland",
+    "footer_mobile_title":      "Mobile",
+    "footer_email_title":       "Email"
+}

@@ -1,0 +1,48 @@
+{
+    "@metadata": {
+        "authors": [
+            "Elias"
+        ],
+        "last-updated": "2016-04-03",
+        "locale": "pl"
+    },
+    "menu_home":        "Początek",
+    "menu_services":    "Oferta",
+    "menu_portfolio":   "Portfolio",
+    "menu_feedback":    "Opinie",
+    "menu_contact-us":  "Kontakt",
+    "menu_language":    "Język",
+
+
+    "header_title":             "Modernizujemy <strong>spółczeństwo najnowszymi technologiami</strong>",
+    "header_sub":               "Implementujemy <strong>e-Usługi</strong> zorientowane na spółczeństwo",
+
+    "services_title":           "Oferta",
+    "services_sub":             "Wierzymy, że nasz codzienny świat powinien być bardziej inteligentny, aby zaoszczędzić czas i zasoby, by stać wygodniejszym dla ludzi. Z Twoją pomocą możemy rozwiązać problemy społecznych z wykorzystaniem najnowszych technologii i otworzyć nowe możliwości dla Twojej firmy.",
+
+    "services_engineering":     "e-Społeczność",
+    "services_engineering_sub": "Rozwijamy społecznie zorientowane e-Usługi na rzecz poprawy komunikacji między obywatelami a rządu, agencjami państwowymi i firmami.",
+    "services_pro-bono":        "Pro Bono Development",
+    "services_pro-bono_sub":    "Jesteśmy gotowi do udziału w open source projektach bezpłatnie w takich dziedzinach, jak e-rząd, usługi publiczne i projektów dla sfery edukacyjnej.",
+    "services_integration":     "Integracja",
+    "services_integration_sub": "W przyszłości, różne serwisy zaczną współpracować samodzielnie aby wykonywanywać różne zadania. Dlatego budujemy nasze rozwiązania z wykorzystaniem najnowszych rozwiązań architektonicznych, które sprawiają, że łatwo rozszerzyć istniejącą funkcjonalność i zintegrować z innymi platformami.",
+    "service_researching":      "Badania",
+    "service_researching_sub":  "Każdy społecznie zorientowany projekty wymaga szczególnej uwagi. W trakcie realizacji projektu, analizujemy mechanizmy współdziałania naszych serwisów a obywateli oraz ich oczekiwania.",
+
+    "portfolio_title":          "Portfolio",
+
+    "feedback_title":           "Opinie",
+
+    "contact-us_title":         "Kontakt",
+    "contact-us_sub":           "Porozmawiamy o <strong>Twój</strong> wkład do <strong>e-Społeczności</strong>",
+    "contact-us_name":          "Twoje imię",
+    "contact-us_mobile":        "Twój numer telefonu",
+    "contact-us_email":         "Twój adres e-mail",
+    "contact-us_question":      "Treść wiadomości",
+    "contact-us_submit":        "Wyślij",
+
+    "footer_address_title":     "Adres",
+    "footer_address":           "ul. Wawelska 4d/6, 80-034 Gdańsk, Polska",
+    "footer_mobile_title":      "Telefon",
+    "footer_email_title":       "Email"
+}

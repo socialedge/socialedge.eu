@@ -1,0 +1,8 @@
+# IntelliJ IDEA (https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore)
+.idea/
+.idea_modules/
+atlassian-ide-plugin.xml
+*.iml
+*.ipr
+*.iws
+/out/
