@@ -48,10 +48,5 @@
     "contact-us_mobile":        "Your Mobile",
     "contact-us_email":         "Your Email",
     "contact-us_question":      "Your question here",
-    "contact-us_submit":        "Send message",
-
-    "footer_address_title":     "Address",
-    "footer_address":           "4d Wawelska St. #6, 80-034 Gdańsk, Poland",
-    "footer_mobile_title":      "Mobile",
-    "footer_email_title":       "Email"
+    "contact-us_submit":        "Send message"
 }

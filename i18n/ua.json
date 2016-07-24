@@ -49,10 +49,5 @@
     "contact-us_mobile":        "Ваш номер телефону",
     "contact-us_email":         "Ваша електронна адреса",
     "contact-us_question":      "Текст повідомлення",
-    "contact-us_submit":        "Надіслати повідомлення",
-
-    "footer_address_title":     "Адрес",
-    "footer_address":           "вул. Wawelska 4d, мешкання 6, 80-034 Ґданськ, Польща",
-    "footer_mobile_title":      "Телефон",
-    "footer_email_title":       "Email"
+    "contact-us_submit":        "Надіслати повідомлення"
 }

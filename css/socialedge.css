@@ -111,10 +111,6 @@ ol, ul, dl {
     list-style-type: none;
 }
 
-a {
-    text-decoration: none !important;
-}
-
 a:focus {
     outline: 0;
 }
@@ -491,12 +487,20 @@ body > footer {
     padding-bottom: 70px;
     padding-top: 70px;
     color: #979794 !important;
-    background: linear-gradient(rgba(44, 44, 44, 0.80), rgba(44, 44, 44, 0.80)), url("../img/footer-bg.svg");
+    background: linear-gradient(rgba(44, 44, 44, 0.80), rgba(44, 44, 44, 0.80)), url("../img/socialedge-logo.svg");
     background-color: #373737;
     background-repeat: no-repeat;
     background-position: center right;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
+}
+
+body > footer a {
+    color: #979794 !important;
+}
+
+body > footer a:hover {
+    text-decoration: uppercase;
 }
 
 body > footer div {
@@ -538,6 +542,7 @@ body > footer div {
     text-align: center;
 
     color: #FFF;
+    text-decoration: none !important;
     font-size: 42px;
     font-weight: 800;
     background: #aaa;

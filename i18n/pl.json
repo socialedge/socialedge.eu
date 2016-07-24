@@ -49,10 +49,5 @@
     "contact-us_mobile":        "Twój numer telefonu",
     "contact-us_email":         "Twój adres e-mail",
     "contact-us_question":      "Treść wiadomości",
-    "contact-us_submit":        "Wyślij",
-
-    "footer_address_title":     "Adres",
-    "footer_address":           "ul. Wawelska 4d/6, 80-034 Gdańsk, Polska",
-    "footer_mobile_title":      "Telefon",
-    "footer_email_title":       "Email"
+    "contact-us_submit":        "Wyślij"
 }
