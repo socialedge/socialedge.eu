@@ -288,35 +288,6 @@
         </div>
     </div>
 
-
-    <div class="gmap" id>
-        <div class="container-fluid">
-            <div class="row">
-                <div id="gmap_canvas" style="height:450px;width:100%;"></div>
-                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-                <script type="text/javascript">
-                    google.maps.event.addDomListener(window, 'load', function() {
-                        var mapCanvas = new google.maps.Map(document.getElementById("gmap_canvas"), {
-                            draggable: true,
-                            zoom: 16,
-                            center: new google.maps.LatLng(54.328624, 18.612479000000008),
-                            mapTypeId: google.maps.MapTypeId.ROADMAP,
-                            scrollwheel: false
-                        });
-                        var mapMarker = new google.maps.Marker({map: mapCanvas, position: new google.maps.LatLng(54.328624, 18.612479000000008)});
-                        var mapPopup = new google.maps.InfoWindow({content: "<b>Socialedge SA</b><br/>4D Wawelska St. #6<br/>80-034 Gdańsk<br/><br/>+48 732 989 925<br/>team@socialedge.eu"});
-                        google.maps.event.addListener(mapMarker, "click", function () {
-                            mapPopup.open(mapCanvas, mapMarker);
-                        });
-                        mapPopup.open(mapCanvas, mapMarker);
-                    });
-                </script>
-
-            </div>
-        </div>
-    </div>
-
-
     <footer>
         <div class="container">
             <div class="row">
