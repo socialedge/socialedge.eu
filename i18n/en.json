@@ -13,6 +13,8 @@
     "menu_contact-us":          "Contact us",
     "menu_language":            "Language",
 
+    "popup_close":              "Close",
+
     "header_title":             "Accelerating <strong>society</strong> with <strong>technology</strong>",
     "header_sub":               "Building <strong>society-oriented e-Services</strong>",
 
@@ -29,6 +31,14 @@
     "service_researching_sub":  "Social-oriented project requires special attention. During the project implementation, we analyze mechanisms of interaction between services and citizens, their expectations and demands.",
 
     "portfolio_title":          "Our Projects",
+    "portfolio_hermes_desc":    "Hermes is a Municipal Transport Timetable System. It was originally created for Sumy, Ukraine city but in more general context, so it can be customized for every city easily.",
+    "developers":               "Developers",
+    "illia_ovchynnikov":        "Elias Ovchynnikov",
+    "vladyslav_vlasenko":       "Vladyslav Vlasenko",
+    "status":                   "Status",
+    "under_development":        "Under active development",
+    "project_on":               "Project on",
+    "about_project":            "About project",
 
     "feedback_title":           "Feedback",
 

@@ -13,6 +13,8 @@
     "menu_contact-us":  "Kontakt",
     "menu_language":    "Język",
 
+    "popup_close":      "Zamknąć",
+
 
     "header_title":             "Modernizujemy <strong>spółczeństwo najnowszymi technologiami</strong>",
     "header_sub":               "Implementujemy <strong>e-Usługi</strong> zorientowane na spółczeństwo",
@@ -29,7 +31,15 @@
     "service_researching":      "Badania",
     "service_researching_sub":  "Każdy społecznie zorientowany projekty wymaga szczególnej uwagi. W trakcie realizacji projektu, analizujemy mechanizmy współdziałania naszych serwisów a obywateli oraz ich oczekiwania.",
 
-    "portfolio_title":          "Portfolio",
+    "portfolio_title":          "Nasze Projekty",
+    "portfolio_hermes_desc":    "Hermes to system zarządzania komunikacją miejską. System powstał na potrzeby miasta Sumy (Ukraina) ale łatwo go dostosować do potrzeb innego miasta.",
+    "developers":               "Deweloperzy",
+    "illia_ovchynnikov":        "Eliasz Owczynikow",
+    "vladyslav_vlasenko":       "Vladyslav Vlasenko",
+    "status":                   "Status",
+    "under_development":        "Ciągle rozwijany",
+    "project_on":               "Projekt na",
+    "about_project":            "O projekcie",
 
     "feedback_title":           "Opinie",
 

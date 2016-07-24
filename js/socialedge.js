@@ -81,9 +81,6 @@ $(document).ready(function () {
 
 
     $(window).load(function () {
-        $(".owl-carousel").owlCarousel({
-            items: 3
-        });
 
         var defaultLanguage = "en";
         console.log("i18n: Default language: " + defaultLanguage);

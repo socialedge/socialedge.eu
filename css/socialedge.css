@@ -46,7 +46,7 @@
 }*/
 
 body {
-    line-height: 1.5em;
+    line-height: 2.0em;
     border: 0;
     margin: 0 auto;
     padding: 0;
@@ -323,7 +323,6 @@ body > header h6 {
 }
 
 .section.section-bg {
-    color: #FFF !important;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/section-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -376,22 +375,13 @@ body > header h6 {
     margin-bottom: 15px;
 }
 
-.section .section-body h1,
-.section .section-body h2,
-.section .section-body h3,
-.section .section-body h4,
-.section .section-body h5,
-.section .section-body h6 {
+.section .section-body .title h1,
+.section .section-body .title h2,
+.section .section-body .title h3,
+.section .section-body .title h4,
+.section .section-body .title h5,
+.section .section-body .title h6 {
     text-transform: uppercase;
-}
-
-.section.section-bg .section-body h1,
-.section.section-bg .section-body h2,
-.section.section-bg .section-body h3,
-.section.section-bg .section-body h4,
-.section.section-bg .section-body h5,
-.section.section-bg .section-body h6 {
-    color: #FFF !important;
 }
 
 div.glyphicon.pic,
@@ -412,19 +402,6 @@ div.icon.pic {
 div.glyphicon.pic:hover,
 div.icon.pic:hover {
     color: #417DB1;
-}
-
-.section .section-body .project {
-    color: black;
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    min-width: 200px;
-    max-height: 300px;
-    min-height: 200px;
-    margin: 10px;
-    padding: 15px;
-    background: #FFF;
 }
 
 .section .section-body h1 {
@@ -525,4 +502,80 @@ body > footer {
 body > footer div {
     display: block;
     margin: 10px 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects>.project {
+    transition: all 500ms ease;
+
+    display:flex;
+    position:relative;
+    overflow:hidden;
+    flex-direction:column;
+    justify-content:center;
+
+    flex-grow: 1;
+    flex-basis: auto;
+    padding: 25px;
+    margin: 10px;
+
+    max-width: 300px;
+    min-width: 200px;
+    height: 225px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFF;
+    font-size: 42px;
+    font-weight: 800;
+    background: #aaa;
+
+    background: rgba(208, 177, 43, 0.9);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+.projects>.project.disabled {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  background: 0;
+  box-shadow: none;
+}
+
+.projects>.project:not(.disabled):hover {
+    background: rgba(65, 125, 177, 0.90);
+}
+
+.projects>.project:hover {
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6),0px 0px 50px rgba(0, 0, 0, 0.8),0px 0px 60px rgba(0, 0, 0, 0.8);
+}
+
+.projects>.project small {
+    display:block;
+    font-weight:400;
+    margin:5px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #dedede;
+}
+
+
+p.intend {
+    text-indent: 50px;
 }

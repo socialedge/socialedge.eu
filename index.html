@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/socialedge.css">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -131,10 +129,33 @@
             <div class="section-body">
                 <div class="row">
                     <div class="col-md-offset-1 col-md-10 col-xs-12 col-xs-offset-0">
-                        <div class="owl-carousel">
-                            <div class="project">e-home</div>
-                            <div class="project">school-landing</div>
-                            <div class="project">e-voting</div>
+                        <div class="projects">
+                            <a class="project" href="#" data-toggle="modal" data-target="#myModal">
+                                Hermes
+                                <small>The Municipal Transport Timetable System</small>
+                            </a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><span data-i18n="about_project">About</span> - Hermes</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/socialedge-logo.svg" height="64px" width="64px" class="center-block">
+                                        <h1 class="text-center">Hermes</h1>
+                                        <p data-i18n="portfolio_hermes_desc">Hermes is a Municipal Transport Timetable System. It was originally created for Sumy, Ukraine city but in more general context, so it can be customized for every city easily.</p>
+                                        <p><strong><span data-i18n="status">Status</span>:</strong> <span data-i18n="under_development">Under active development</span></p>
+                                        <p><strong><span data-i18n="developers">Developers</span>:</strong> <span data-i18n="illia_ovchynnikov">Illia Ovchynnikov</span>, <span data-i18n="vladyslav_vlasenko">Vladyslav Vlasenko</span></p>
+                                        <a href="https://github.com/socialedge/hermes" target="_blank" class="text-center center-block"><span data-i18n="project_on">Project on</span> <img src="img/github.svg" width="64px"></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal" data-i18n="popup_close">Close</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,7 +336,6 @@
     <script src="js/jquery.2.2.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scroll.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/socialedge.js"></script>
 
     <script src="js/jquery.i18n.js"></script>
