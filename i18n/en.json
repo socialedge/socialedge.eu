@@ -9,7 +9,7 @@
     "menu_home":                "Home",
     "menu_services":            "Services",
     "menu_portfolio":           "Portfolio",
-    "menu_feedback":            "Feedback",
+    "menu_team":                "Team",
     "menu_contact-us":          "Contact us",
     "menu_language":            "Language",
 
@@ -40,7 +40,7 @@
     "project_on":               "Project on",
     "about_project":            "About project",
 
-    "feedback_title":           "Feedback",
+    "team_title":               "Team",
 
     "contact-us_title":         "Contact us",
     "contact-us_sub":           "Let's talk about <strong>your</strong> service <strong>e-Sociability</strong>",

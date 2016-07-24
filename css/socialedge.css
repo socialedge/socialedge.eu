@@ -404,75 +404,6 @@ div.icon.pic:hover {
     color: #417DB1;
 }
 
-/* Feedback */
-
-.section .section-feedback #quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 30px;
-}
-
-.section .section-feedback #quote-carousel .carousel-indicators {
-    right: 50%;
-    bottom: 0;
-    margin-right: -19px;
-}
-
-.section .section-feedback #quote-carousel .carousel-indicators li {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    cursor: pointer;
-    border: 4px solid #CCC;
-    border-radius: 50px;
-    opacity: 0.4;
-    overflow: hidden;
-    transition: all 0.4s;
-}
-
-@media (max-width: 767px) {
-    .section .section-feedback #quote-carousel .carousel-indicators {
-        bottom: -40px;
-    }
-
-    .section .section-feedback #quote-carousel .carousel-indicators .active {
-        width: 64px !important;
-        height: 64px !important;
-    }
-
-    .section .section-feedback #quote-carousel .carousel-indicators li {
-        width: 45px !important;
-        height: 45px !important;
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
-.section .section-feedback #quote-carousel .carousel-indicators .active {
-    background: #333333;
-    width: 128px;
-    height: 128px;
-    border-radius: 100px;
-    border-color: #f33;
-    opacity: 1;
-    overflow: hidden;
-}
-
-.section .section-feedback .carousel-inner {
-    min-height: 300px;
-}
-
-.section .section-feedback .item blockquote {
-    border-left: none;
-    margin: 0;
-}
-
-.section .section-feedback .item blockquote p:before {
-    content: "‘‘";
-    font-family: 'Times New Roman', serif !important;
-    font-size: 60px;
-    letter-spacing: -5px;
-    float: left;
-}
 
 .section:nth-child(odd) {
     background-color: #FAFAFA;
@@ -574,6 +505,35 @@ body > footer div {
     line-height: 20px;
     color: #dedede;
 }
+
+.team-member {
+    margin-bottom: 15px;
+}
+
+.team-member .member-ico {
+    height: 128px;
+    text-align: center;
+}
+
+.team-member .member-ico  img {
+    height: 128px;
+    width: 128px;
+}
+
+.team-member .member-desc {
+    color: #000;
+    text-align:center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.team-member .member-desc small {
+    display: block;
+    font-size: 15px;
+    color: #737373;
+}
+
+
 
 
 p.intend {

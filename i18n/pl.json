@@ -9,7 +9,7 @@
     "menu_home":        "Początek",
     "menu_services":    "Oferta",
     "menu_portfolio":   "Portfolio",
-    "menu_feedback":    "Opinie",
+    "menu_team":        "Zespół",
     "menu_contact-us":  "Kontakt",
     "menu_language":    "Język",
 
@@ -35,13 +35,13 @@
     "portfolio_hermes_desc":    "Hermes to system zarządzania komunikacją miejską. System powstał na potrzeby miasta Sumy (Ukraina) ale łatwo go dostosować do potrzeb innego miasta.",
     "developers":               "Deweloperzy",
     "illia_ovchynnikov":        "Eliasz Owczynikow",
-    "vladyslav_vlasenko":       "Vladyslav Vlasenko",
+    "vladyslav_vlasenko":       "Władysław Wlasenko",
     "status":                   "Status",
     "under_development":        "Ciągle rozwijany",
     "project_on":               "Projekt na",
     "about_project":            "O projekcie",
 
-    "feedback_title":           "Opinie",
+    "team_title":               "Zespół",
 
     "contact-us_title":         "Kontakt",
     "contact-us_sub":           "Porozmawiamy o <strong>Twój</strong> wkład do <strong>e-Społeczności</strong>",

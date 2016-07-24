@@ -9,7 +9,7 @@
     "menu_home":        "Головна",
     "menu_services":    "Оферта",
     "menu_portfolio":   "Портфоліо",
-    "menu_feedback":    "Відгуки",
+    "menu_team":        "Команда",
     "menu_contact-us":  "Зв'язок з нами",
     "menu_language":    "Мова",
 
@@ -41,7 +41,7 @@
     "project_on":               "Проект на",
     "about_project":            "Про проект",
 
-    "feedback_title":           "Відгуки",
+    "team_title":               "Команда",
 
     "contact-us_title":         "Зв'яжіться з нами",
     "contact-us_sub":           "Давайте поговоримо про <strong>Ваш</strong> внесок у <strong>e-Громаду</strong>",
