@@ -222,27 +222,29 @@
 
             <div class="row section-body">
                 <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-xs-offset-0">
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon glyphicon glyphicon-user"></span>
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" data-i18n="contact-us_name" required>
-                    </div>
-                    <br>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon glyphicon glyphicon-earphone"></span>
-                        <input type="text" name="number" class="form-control" placeholder="Your Mobile" data-i18n="contact-us_mobile">
-                    </div>
-                    <br>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon">@</span>
-                        <input type="email" name="email" class="form-control" placeholder="Your Email" data-i18n="contact-us_email" required>
-                    </div>
-                    <br>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group-addon glyphicon glyphicon-question-sign"></span>
-                        <textarea class="form-control" name="query" style="height: 100px;" data-i18n="contact-us_question" placeholder="Your queries here" required></textarea>
-                    </div>
-                    <br>
-                    <button type="submit" class="pull-right btn-lg btn-primary" data-i18n="contact-us_submit">I'm in</button>
+                    <form id="contact-form">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input id="contact-name" type="text" name="name" class="form-control" placeholder="Your Name" data-i18n="contact-us_name" required>
+                        </div>
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon glyphicon glyphicon-earphone"></span>
+                            <input id="contact-mobile" type="text" name="number" class="form-control" placeholder="Your Mobile" data-i18n="contact-us_mobile">
+                        </div>
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon glyphicon glyphicon-info-sign"></span>
+                            <input id="contact-subject" type="text" name="number" class="form-control" placeholder="Mail subject" data-i18n="contact-us_subject" required>
+                        </div>
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon glyphicon glyphicon-pencil"></span>
+                            <textarea id="contact-body" class="form-control" name="query" style="height: 100px;" data-i18n="contact-us_question" placeholder="Text body" required></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="pull-right btn-lg btn-primary" data-i18n="contact-us_submit" id="sendMail">I'm in</button>
+                    </form>
                 </div>
             </div>
         </div>

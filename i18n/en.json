@@ -50,6 +50,7 @@
     "contact-us_name":          "Your Name",
     "contact-us_mobile":        "Your Mobile",
     "contact-us_email":         "Your Email",
+    "contact-us_subject":       "Subject",
     "contact-us_question":      "Your question here",
-    "contact-us_submit":        "Send message"
+    "contact-us_submit":        "Send message via your mail client"
 }

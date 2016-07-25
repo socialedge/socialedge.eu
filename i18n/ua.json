@@ -50,6 +50,7 @@
     "contact-us_name":          "Ваше ім'я",
     "contact-us_mobile":        "Ваш номер телефону",
     "contact-us_email":         "Ваша електронна адреса",
+    "contact-us_subject":       "Тема повідомлення",
     "contact-us_question":      "Текст повідомлення",
-    "contact-us_submit":        "Надіслати повідомлення"
+    "contact-us_submit":        "Надіслати через Ваш почтовий клієнт"
 }

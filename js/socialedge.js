@@ -78,6 +78,15 @@ $(document).ready(function () {
 
         return availableLanguages;
     }
+    
+    function openMailClient(to, subject, body, callback) {
+        var wnd = window.open("mailto:" + to + "?subject=" + subject + "&body=" + body);
+        setTimeout(function() {
+            wnd.close();
+            if (typeof callback === "function")
+                callback();
+        }, 500);
+    }
 
 
     $(window).load(function () {
@@ -108,6 +117,23 @@ $(document).ready(function () {
 
             translate(selectedLanguage, function () {
                 hideSplash();
+            });
+        });
+
+        $("form#contact-form").submit(function (e) {
+            e.preventDefault();
+            var name = $("input#contact-name").val();
+            var tel = $("input#contact-mobile").val();
+            var subject = $("input#contact-subject").val();
+            var body = $("textarea#contact-body").val();
+
+            var _body = encodeURIComponent(body) + "%0D%0A%0D%0A" + encodeURIComponent(name);
+            if ($.trim(tel).length > 0) {
+                _body += "%0D%0A" + $.trim(tel);
+            }
+
+            openMailClient("team@socialedge.eu", encodeURIComponent(subject), _body, function() {
+                $("form#contact-form").trigger("reset");
             });
         });
     });
