@@ -1,50 +1,3 @@
-/*@media (max-width: 991px) and (min-width: 768px) {
-   .navbar-header {
-         float: none;
-     }
-     .navbar-left,.navbar-right {
-         float: none !important;
-     }
-     .navbar-toggle {
-         display: block;
-     }
-     .navbar-collapse {
-         border-top: 1px solid transparent;
-         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-     }
-     .navbar-fixed-top {
-         top: 0;
-         border-width: 0 0 1px;
-     }
-     .navbar-collapse.collapse {
-         display: none!important;
-     }
-     .navbar-nav {
-         float: none!important;
-         margin-top: 7.5px;
-     }
-     .navbar-nav>li {
-         float: none;
-     }
-     .navbar-nav>li>a {
-         padding-top: 10px;
-         padding-bottom: 10px;
-     }
-     .collapse.in{
-         display:block !important;
-     }
-     .navbar-nav .open .dropdown-menu {
-            position: static;
-            float: none;
-            width: auto;
-            margin-top: 0;
-            background-color: transparent;
-            border: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-         }
-}*/
-
 body {
     line-height: 2.0em;
     border: 0;
@@ -203,7 +156,7 @@ nav a:hover {
     color: #417DB1 !important;
 }
 
-nav .dropdown.lang-panel a.dropdown-toggle .glyphicon{
+nav .dropdown.lang-panel a.dropdown-toggle .glyphicon {
     font-size: 24px;
     line-height: 0 !important;
     top: 5.4px;
@@ -404,7 +357,6 @@ div.icon.pic:hover {
     color: #417DB1;
 }
 
-
 .section:nth-child(odd) {
     background-color: #FAFAFA;
 }
@@ -447,14 +399,14 @@ body > footer div {
     padding: 0;
 }
 
-.projects>.project {
+.projects > .project {
     transition: all 500ms ease;
 
-    display:flex;
-    position:relative;
-    overflow:hidden;
-    flex-direction:column;
-    justify-content:center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
 
     flex-grow: 1;
     flex-basis: auto;
@@ -474,68 +426,47 @@ body > footer div {
     background: #aaa;
 
     background: rgba(208, 177, 43, 0.9);
-    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.projects>.project.disabled {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-  background: 0;
-  box-shadow: none;
+.projects > .project:hover {
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6), 0px 0px 50px rgba(0, 0, 0, 0.8), 0px 0px 60px rgba(0, 0, 0, 0.8);
 }
 
-.projects>.project:not(.disabled):hover {
-    background: rgba(65, 125, 177, 0.90);
-}
-
-.projects>.project:hover {
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6),0px 0px 50px rgba(0, 0, 0, 0.8),0px 0px 60px rgba(0, 0, 0, 0.8);
-}
-
-.projects>.project small {
-    display:block;
-    font-weight:400;
-    margin:5px;
+.projects > .project small {
+    display: block;
+    font-weight: 400;
+    margin: 5px;
     font-size: 20px;
-    line-height: 20px;
     color: #dedede;
+    line-height: normal;
 }
 
 .team-member {
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .team-member .member-ico {
-    height: 128px;
+    height: 155px;
     text-align: center;
 }
 
-.team-member .member-ico  img {
-    height: 128px;
-    width: 128px;
+.team-member .member-ico img {
+    height: 155px;
+    width: 155px;
 }
 
 .team-member .member-desc {
     color: #000;
-    text-align:center;
+    text-align: center;
     font-size: 32px;
     font-weight: 800;
+    line-height: 32px;
 }
 
 .team-member .member-desc small {
     display: block;
     font-size: 15px;
     color: #737373;
-}
-
-
-
-
-p.intend {
-    text-indent: 50px;
 }
