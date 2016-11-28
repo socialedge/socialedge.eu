@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 body {
     line-height: 2.0em;
     border: 0;
@@ -69,13 +71,12 @@ a:focus {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     color: #6a6a6a !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #262626;
 }
@@ -143,13 +144,13 @@ nav a {
     transition: all 500ms ease;
     background: transparent !important;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
 nav .navbar-brand {
     max-width: 256px;
-    padding: 20px 20px 20px 0;
+    padding: 21px 20px 20px 0;
 }
 
 nav a:hover {
