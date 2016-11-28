@@ -1,4 +1,29 @@
 $(document).ready(function () {
+    function createCookie(name, value, days) {
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    function eraseCookie(name) {
+        createCookie(name, "", -1);
+    }
+
     function hideSplash() {
         var $splash = $("div.splash-loading");
 
@@ -103,26 +128,35 @@ $(document).ready(function () {
         var availableLanguages = detectAvailableLanguages();
         console.log("i18n: Available languages {country: language, ...}: ", availableLanguages);
 
-        detectCountryCode(function(country){
-            console.log("i18n: Browser country: " + country);
+        var cookieLang = readCookie("lang");
+        if (cookieLang) {
+            console.log("i18n: Language loaded from cookie: " + cookieLang);
 
-            var selectedLanguage = availableLanguages[country] ? availableLanguages[country] : defaultLanguage;
-            console.log("i18n: Selected language: " + selectedLanguage);
+            translate(cookieLang, function () {
+                hideSplash();
+            });
+        } else {
+            detectCountryCode(function(country){
+                console.log("i18n: Browser country: " + country);
 
-            $(".lang-panel .lang-code").each(function () {
-                var _lang = $(this).attr("data-lang");
-                $(this).click(function () {
-                    showSplash();
-                    translate(_lang, function() {
-                        hideSplash();
-                    });
+                var selectedLanguage = availableLanguages[country] ? availableLanguages[country] : defaultLanguage;
+                console.log("i18n: Selected language: " + selectedLanguage);
+
+                translate(selectedLanguage, function () {
+                    hideSplash();
                 });
             });
-            console.log("i18n: Language switchers bind");
+        }
 
-
-            translate(selectedLanguage, function () {
-                hideSplash();
+        $(".lang-panel .lang-code").each(function () {
+            var _lang = $(this).attr("data-lang");
+            $(this).click(function () {
+                showSplash();
+                translate(_lang, function() {
+                    eraseCookie("lang");
+                    createCookie("lang", _lang, 25);
+                    hideSplash();
+                });
             });
         });
 
