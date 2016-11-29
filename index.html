@@ -233,6 +233,11 @@
                         </div>
                         <br>
                         <div class="input-group input-group-lg">
+                            <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                            <input id="contact-email" type="text" name="name" class="form-control" placeholder="Your Email" data-i18n="contact-us_email" required>
+                        </div>
+                        <br>
+                        <div class="input-group input-group-lg">
                             <span class="input-group-addon glyphicon glyphicon-earphone"></span>
                             <input id="contact-mobile" type="text" name="number" class="form-control" placeholder="Your Mobile" data-i18n="contact-us_mobile">
                         </div>
@@ -244,10 +249,14 @@
                         <br>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon glyphicon glyphicon-pencil"></span>
-                            <textarea id="contact-body" class="form-control" name="query" style="height: 100px;" data-i18n="contact-us_question" placeholder="Text body" required></textarea>
+                            <textarea id="contact-body" class="form-control" name="query" style="height: 100px;" data-i18n="contact-us_question" placeholder="Email body*" required></textarea>
                         </div>
                         <br>
-                        <button type="submit" class="pull-right btn-lg btn-primary" data-i18n="contact-us_submit" id="sendMail">I'm in</button>
+                        <div class="submit-panel pull-right">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                            <button type="submit" class=" btn-lg btn-primary" data-i18n="contact-us_submit" id="sendMail">I'm in</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -273,6 +282,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scroll.min.js"></script>
     <script src="js/socialedge.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_z01KnDc17EevX3kofuDGP");
+        })();
+    </script>
 
     <script src="js/jquery.i18n.js"></script>
     <script src="js/jquery.i18n.messagestore.js"></script>

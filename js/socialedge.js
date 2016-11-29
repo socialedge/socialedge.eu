@@ -103,16 +103,6 @@ $(document).ready(function () {
 
         return availableLanguages;
     }
-    
-    function openMailClient(to, subject, body, callback) {
-        var wnd = window.open("mailto:" + to + "?subject=" + subject + "&body=" + body);
-        setTimeout(function() {
-            wnd.close();
-            if (typeof callback === "function")
-                callback();
-        }, 500);
-    }
-
 
     $(window).load(function () {
         var _$navToggle = $(".navbar-toggle");
@@ -161,20 +151,34 @@ $(document).ready(function () {
         });
 
         var _$contactForm = $("form#contact-form");
+        var _$contactFormSubmit = _$contactForm.find('[type="submit"]');
+        var _$contactFormHourglass = _$contactForm.find('.glyphicon-hourglass');
+        var _$contactFormOk = _$contactForm.find('.glyphicon-ok');
+
         _$contactForm.submit(function (e) {
             e.preventDefault();
+            _$contactFormSubmit.prop('disabled', true);
+            _$contactFormHourglass.css('visibility', 'visible');
             var name = $("input#contact-name").val();
+            var email = $("input#contact-email").val();
             var tel = $("input#contact-mobile").val();
             var subject = $("input#contact-subject").val();
             var body = $("textarea#contact-body").val();
 
-            var _body = encodeURIComponent(body) + "%0D%0A%0D%0A" + encodeURIComponent(name);
-            if ($.trim(tel).length > 0) {
-                _body += "%0D%0A" + $.trim(tel);
-            }
-
-            openMailClient("team@socialedge.eu", encodeURIComponent(subject), _body, function() {
+            emailjs.send("gmail", "contact_us_form",
+                {"topic": subject, "body": body, "name": name, "phone": tel, "email": email})
+            .then(function(response) {
+                console.log("EmailJS OK! status=%d, text=%s", response.status, response.text);
                 _$contactForm.trigger("reset");
+                _$contactFormSubmit.prop('disabled', true);
+                _$contactFormHourglass.css('visibility', 'hidden');
+                _$contactFormOk.css('visibility', 'visible');
+                setTimeout(function () {
+                    _$contactFormOk.css('visibility', 'hidden');
+                }, 5000);
+            }, function(err) {
+                console.log("EmailJS Error = ", err);
+                _$contactFormHourglass.css('visibility', 'hidden');
             });
         });
     });

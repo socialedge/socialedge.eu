@@ -350,6 +350,21 @@ section .team-member .member-desc small {
     color: #737373;
 }
 
+section #contact-form .submit-panel span.glyphicon {
+    top: 8px;
+    font-size: 27px;
+    visibility: hidden;
+}
+
+section #contact-form span.glyphicon-hourglass {
+    animation: breathing 3s ease-out infinite normal;
+    color: #286090;
+}
+
+section #contact-form span.glyphicon-ok {
+    color: #4ba200;
+}
+
 a {
     transition: all 400ms ease;
 }
