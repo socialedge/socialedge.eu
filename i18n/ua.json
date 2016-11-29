@@ -41,9 +41,8 @@
     "about_project":            "Про проект",
 
     "team_title":               "Наша команда",
-    "tell-about-yourself":      "Дай нам знати про себе",
-    "waiting-to-join":          "Ми чекали саме на тебе. Долучайся.",
-    "love-code-question":       "Кохаєш програмувати у свій вільний час?",
+    "joinus-question":          "Хочеш долучитися до нашої команди?",
+    "tell-about-yourself":      "Чудово! Розповіж нам про себе.",
 
     "contact-us_title":         "Контакт",
     "contact-us_sub":           "Давайте поговоримо про <strong>Ваш</strong> внесок у <strong>e-Громаду</strong>",
