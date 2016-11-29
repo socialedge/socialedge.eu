@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
 
     function hideSplash() {
-        var $splash = $("div.splash-loading");
+        var $splash = $("div.splash-screen");
 
         $splash.addClass('unvisible');
         $splash.one('transitionend', function () {
@@ -36,7 +36,7 @@ $(document).ready(function () {
     }
 
     function showSplash() {
-        var $splash = $("div.splash-loading");
+        var $splash = $("div.splash-screen");
         $splash.show();
         $splash.removeClass('unvisible');
     }
