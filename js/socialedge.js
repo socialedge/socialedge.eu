@@ -1,5 +1,18 @@
-$(document).ready(function () {
-    function createCookie(name, value, days) {
+var TelegramMessenger = function (botToken, chatId) {
+    this.token = botToken;
+    this.chatId = chatId;
+
+    this.sendMessage = function (body) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("POST", "https://api.telegram.org/bot" + this.token + "/sendMessage", false );
+        xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlHttp.send("text=" + encodeURIComponent(body) + "&parse_mode=Markdown&chat_id=" + this.chatId);
+        return xmlHttp.responseText.indexOf('"ok":true') !== -1;
+    }
+};
+
+var Cookies = new (function () {
+    this.createCookie = function (name, value, days) {
         if (days) {
             var date = new Date();
             date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -7,9 +20,9 @@ $(document).ready(function () {
         }
         else var expires = "";
         document.cookie = name + "=" + value + expires + "; path=/";
-    }
+    };
 
-    function readCookie(name) {
+    this.readCookie = function (name) {
         var nameEQ = name + "=";
         var ca = document.cookie.split(';');
         for (var i = 0; i < ca.length; i++) {
@@ -18,12 +31,14 @@ $(document).ready(function () {
             if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
         }
         return null;
-    }
+    };
 
-    function eraseCookie(name) {
-        createCookie(name, "", -1);
-    }
+    this.eraseCookie = function (name) {
+        this.createCookie(name, "", -1);
+    };
+});
 
+$(document).ready(function () {
     function hideSplash() {
         var $splash = $("div.splash-screen");
 
@@ -118,7 +133,7 @@ $(document).ready(function () {
         var availableLanguages = detectAvailableLanguages();
         console.log("i18n: Available languages {country: language, ...}: ", availableLanguages);
 
-        var cookieLang = readCookie("lang");
+        var cookieLang = Cookies.readCookie("lang");
         if (cookieLang) {
             console.log("i18n: Language loaded from cookie: " + cookieLang);
 
@@ -143,8 +158,8 @@ $(document).ready(function () {
             $(this).click(function () {
                 showSplash();
                 translate(_lang, function() {
-                    eraseCookie("lang");
-                    createCookie("lang", _lang, 25);
+                    Cookies.eraseCookie("lang");
+                    Cookies.createCookie("lang", _lang, 25);
                     hideSplash();
                 });
             });
@@ -157,29 +172,29 @@ $(document).ready(function () {
 
         _$contactForm.submit(function (e) {
             e.preventDefault();
-            _$contactFormSubmit.prop('disabled', true);
-            _$contactFormHourglass.css('visibility', 'visible');
             var name = $("input#contact-name").val();
             var email = $("input#contact-email").val();
-            var tel = $("input#contact-mobile").val();
             var subject = $("input#contact-subject").val();
             var body = $("textarea#contact-body").val();
 
-            emailjs.send("gmail", "contact_us_form",
-                {"topic": subject, "body": body, "name": name, "phone": tel, "email": email})
-            .then(function(response) {
-                console.log("EmailJS OK! status=%d, text=%s", response.status, response.text);
-                _$contactForm.trigger("reset");
-                _$contactFormSubmit.prop('disabled', true);
-                _$contactFormHourglass.css('visibility', 'hidden');
+
+            var telegramBot = new TelegramMessenger('295799588:AAHkmxKXaJVZclF3GTcCbJ2unRZBToH_h0g', '-169424401');
+
+            _$contactFormSubmit.prop('disabled', true);
+            _$contactFormHourglass.css('visibility', 'visible');
+            var result = telegramBot.sendMessage("*" + name + "* (_" + email + "_) wrote: ```text\nSubject: " + subject + "\nBody: " + body + "```");
+            _$contactFormHourglass.css('visibility', 'hidden');
+
+            if (result) {
                 _$contactFormOk.css('visibility', 'visible');
                 setTimeout(function () {
                     _$contactFormOk.css('visibility', 'hidden');
                 }, 5000);
-            }, function(err) {
-                console.log("EmailJS Error = ", err);
-                _$contactFormHourglass.css('visibility', 'hidden');
-            });
+                _$contactFormSubmit.prop('disabled', false);
+                _$contactForm[0].reset();
+            } else {
+                alert("Service unavailable :(");
+            }
         });
     });
 });
