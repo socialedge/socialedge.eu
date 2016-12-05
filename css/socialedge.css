@@ -90,8 +90,12 @@ nav a.lang-code img {
 }
 
 nav .navbar-brand {
-    max-width: 256px;
-    padding: 22.5px 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 236px;
+    padding: 0;
+    margin: 0;
 }
 
 nav .navbar-toggle {
