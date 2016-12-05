@@ -303,12 +303,13 @@ section .projects > .project {
     font-weight: 800;
     background: #aaa;
 
-    background: rgba(208, 177, 43, 0.9);
+    background: rgba(208, 160, 43, 0.84);
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     border-radius: 6px;
 }
 
 section .projects > .project:hover {
+    background: rgba(208, 160, 43, 0.89);
     text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
 }
 
