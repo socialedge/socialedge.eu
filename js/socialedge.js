@@ -39,6 +39,13 @@ var Cookies = new (function () {
 });
 
 $(document).ready(function () {
+    $(".typed").typed({
+        strings: ["Smart Cities", "eEducation", "eHealth", "eAdministration", "eGovernment"],
+        startDelay: 1300,
+        backDelay: 1300,
+        typeSpeed: 70
+    });
+
     function hideSplash() {
         var $splash = $("div.splash-screen");
 
