@@ -176,6 +176,30 @@ body > header p {
     font-size: 2em;
 }
 
+@media (max-width: 460px) {
+    body > header {
+        height: 28em;
+    }
+    body > header h1 {
+        font-size: 2.8em;
+    }
+    body > header p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 370px) {
+    body > header {
+        height: 22em;
+    }
+    body > header h1 {
+        font-size: 2.3em;
+    }
+    body > header p {
+        font-size: 1.3em;
+    }
+}
+
 section {
     padding-bottom: 130px;
     padding-top: 90px;
