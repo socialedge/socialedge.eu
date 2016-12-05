@@ -321,6 +321,12 @@ section .projects > .project small {
     line-height: normal;
 }
 
+section.portfolio .modal-body p {
+    text-indent: 23px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 section .team-member {
     margin-top: 15px;
     margin-bottom: 15px;

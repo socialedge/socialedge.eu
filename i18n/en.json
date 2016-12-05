@@ -31,12 +31,13 @@
     "whatwedo_researching_sub":  "Each socially-focused project requires special attention and analysis. If you have revolutionary ideas, we will help you assess and analyze the idea to determine the readiness of infrastructure and society to the idea.",
 
     "portfolio_title":          "Our Projects",
-    "portfolio_hermes_desc":    "Hermes is a Municipal Transport Timetable System. It was originally created for Sumy (Ukraine) city but in more general context, so it can be customized for every city easily.",
+    "portfolio_hermes_short":   "A Municipal Transport Timetable System",
+    "portfolio_hermes_desc":    "<p>Hermes is a Municipal Transport Timetable System.</p><p>The purpose of the project was the desire to offer better transit schedules at bus/trolley stops in Sumy City (Ukraine) and to develop an electronic system to display them.</p><p>As of Aug 28, the project was suspended because of lack of correct schedules and feedback from transit operator.</p>",
     "developers":               "Developers",
     "illia_ovchynnikov":        "Illia Ovchynnikov",
     "vladyslav_vlasenko":       "Vladyslav Vlasenko",
     "status":                   "Status",
-    "under_development":        "Under active development",
+    "under_development":        "Suspended",
     "project_on":               "Project on",
     "about_project":            "About project",
 
