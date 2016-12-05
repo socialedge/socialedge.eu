@@ -52,11 +52,11 @@
     "tell-about-yourself":      "Чудово! Розповіж нам про себе.",
 
     "contact-us_title":         "Контакт",
-    "contact-us_sub":           "Давайте поговоримо про <strong>Ваш</strong> внесок у <strong>e-Громаду</strong>",
-    "contact-us_name":          "Ваше ім'я",
-    "contact-us_mobile":        "Ваш номер телефону",
-    "contact-us_email":         "Ваша електронна адреса",
-    "contact-us_subject":       "Тема повідомлення",
+    "contact-us_sub":           "Маєш питання чи може тебе зацікавити наші проекти? Запрошуємо до контакту!",
+    "contact-us_name":          "Твоє ім'я",
+    "contact-us_mobile":        "Номер телефону",
+    "contact-us_email":         "Електронна адреса",
+    "contact-us_subject":       "Тема",
     "contact-us_question":      "Текст повідомлення",
     "contact-us_submit":        "Надіслати"
 }
