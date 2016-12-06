@@ -19,16 +19,14 @@
     "header_sub":               "We do ",
 
     "whatwedo_title":           "What we do",
-    "whatwedo_sub":             "We believe our everyday world has to be smarter to save our time and become more people friendly. In our spare time, we support different public initiatives and developing our own projects.",
+    "whatwedo_sub":             "We believe our everyday world has to be smarter to save our time and become more people friendly. Therefore, we support different public initiatives and developing own projects in our spare time.",
 
-    "whatwedo_engineering":     "e-Society Engineering",
+    "whatwedo_engineering":     "Software <br/> Development",
     "whatwedo_engineering_sub": "We design and implement society-oriented e-services that enhance interaction between citizens, government, public institutions and city infrastructure.",
-    "whatwedo_pro-bono":        "Pro Bono Development",
+    "whatwedo_pro-bono":        "We do <br/> Pro Bono Publico",
     "whatwedo_pro-bono_sub":    "We stand ready to offer pro bono service to projects and initiatives in such spheres as e-government, education and public services.",
-    "whatwedo_integration":     "Integration",
-    "whatwedo_integration_sub": "In the future, various services will cooperate to perform various tasks. That's why we offer integration services with modern government infrastructure and our services.",
-    "whatwedo_researching":      "Researching",
-    "whatwedo_researching_sub":  "Each socially-focused project requires special attention and analysis. If you have revolutionary ideas, we will help you assess and analyze the idea to determine the readiness of infrastructure and society to the idea.",
+    "whatwedo_cooperation":     "Cooperating <br/> with others",
+    "whatwedo_cooperation_sub": "Public projects require special attention and great efforts toward implementing them. Therefore, we initiate public discussions, cooperate with other initiatives and involve community into informatization processes.",
 
     "portfolio_title":          "Our Projects",
     "portfolio_hermes_short":   "A Municipal Transport Timetable System",
