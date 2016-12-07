@@ -189,7 +189,7 @@ $(document).ready(function () {
 
             _$contactFormSubmit.prop('disabled', true);
             _$contactFormHourglass.css('visibility', 'visible');
-            var result = telegramBot.sendMessage("*" + name + "* (_" + email + "_) wrote: ```text\nSubject: " + subject + "\nBody: " + body + "```");
+            var result = telegramBot.sendMessage("*" + name + "* (_" + email + "_) wrote:\n```text\nSubject: " + subject + "\nBody: " + body + "```");
             _$contactFormHourglass.css('visibility', 'hidden');
 
             if (result) {
