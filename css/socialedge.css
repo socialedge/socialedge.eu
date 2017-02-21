@@ -155,7 +155,7 @@ body > header {
     align-items: center;
     flex-direction: column;
     height: 35em;
-    padding: 0 15px;
+    padding: 0 155px;
 
     text-align: center;
     color: #FFF !important;
@@ -176,9 +176,16 @@ body > header p {
     font-size: 2em;
 }
 
+@media (max-width: 1086px) {
+    body > header {
+        padding: 0 55px;
+    }
+}
+
 @media (max-width: 460px) {
     body > header {
         height: 28em;
+        padding: 0 15px;
     }
     body > header h1 {
         font-size: 2.8em;
@@ -191,6 +198,7 @@ body > header p {
 @media (max-width: 370px) {
     body > header {
         height: 22em;
+        padding: 0 10px;
     }
     body > header h1 {
         font-size: 2.3em;
@@ -383,6 +391,8 @@ section .team-member .member-desc small {
     display: block;
     font-size: 15px;
     color: #737373;
+    line-height: 15px;
+    margin-top: 10px;
 }
 
 section #contact-form .submit-panel span.glyphicon {
